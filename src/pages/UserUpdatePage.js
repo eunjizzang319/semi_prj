@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import MainMenu from "../layouts/MainMenu";
-import Footer from "../layouts/Footer";
-import { shopUsers } from "../data/shopUsers";
-import UserPage from "./UserPage";
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import MainMenu from '../layouts/MainMenu';
+import Footer from '../layouts/Footer';
+import { shopUsers } from '../data/shopUsers';
+import UserPage from './UserPage';
 
+// 회원정보 수정
 const UserUpdatePage = () => {
   const [user, setUser] = useState({});
 
@@ -18,7 +19,7 @@ const UserUpdatePage = () => {
   };
 
   const saveHandler = (e) => {
-    alert("회원 정보가 성공적으로 저장되었습니다.");
+    alert('회원 정보가 성공적으로 저장되었습니다.');
     setUser(shopUsers);
     // <UserPage />;
   };

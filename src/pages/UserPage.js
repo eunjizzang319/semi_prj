@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { Link, Outlet } from "react-router-dom";
-import { shopUsers } from "../data/shopUsers";
-import MainMenu from "../layouts/MainMenu";
-import Footer from "../layouts/Footer";
+import React, { useEffect, useState } from 'react';
+import { Link, Outlet } from 'react-router-dom';
+import { shopUsers } from '../data/shopUsers';
+import MainMenu from '../layouts/MainMenu';
+import Footer from '../layouts/Footer';
 
+// 마이페이지
 const UserPage = () => {
   const [user, setUser] = useState({});
 
@@ -89,9 +90,9 @@ const UserPage = () => {
                   <td className="p-3">{item.price}</td>
                   <td
                     className={`p-3 font-semibold ${
-                      item.state === "배송 완료"
-                        ? "text-green-600"
-                        : "text-yellow-600"
+                      item.state === '배송 완료'
+                        ? 'text-green-600'
+                        : 'text-yellow-600'
                     }`}
                   >
                     {item.state}
